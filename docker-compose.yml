@@ -1,0 +1,29 @@
+version: '3'
+services:
+  java:
+    image: anjaneyulu02/javareponit:latest
+    ports:
+      - "80:8"
+    deploy:
+      replicas: 3
+
+  python:
+    image: anjaneyulu02/pythonreponit:latest
+    ports:
+      - "81:80"
+    deploy:
+      replicas: 3
+
+  oracle:
+    image: anjaneyulu02/oraclereponit:latest
+    ports:
+      - "82:80"
+    deploy:
+      replicas: 3
+
+  powerb:
+    image: anjaneyulu02/powerbreponit:latest
+    ports:
+      - "83:80"
+    deploy:
+      replicas: 3
